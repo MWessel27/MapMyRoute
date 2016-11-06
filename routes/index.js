@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res){
   res.render('index', {
-    title: 'Map My Route'
+    title: 'Route Logic'
   });
 });
 
