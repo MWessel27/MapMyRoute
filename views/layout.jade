@@ -1,10 +1,23 @@
-doctype
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
-  body
-    section#wrapper
-        block content
-        footer
+doctype html
+html.
+<head>
+title= title
+link(rel='stylesheet', href='/stylesheets/style.css')
+link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
+</head>
+<body>
+section#wrapper
+    block content
+    footer
+
+<form action="demo_form.asp">
+Select a file: <input type="file" name="img" id="test">
+<input type="button" value="Submit" onclick="mytest1()">
+</form>
+script(type="text/javascript").
+  function mytest1() {
+    var input = document.getElementById("test").value;
+    window.alert(input);
+  }
+
+</body>
